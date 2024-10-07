@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar__s1 h1 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar__s1 img {
+    width: 6%;
+    height: 6%;
+    cursor: pointer;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 40%;
+}
+
+.navbar__s2 p {
+    cursor: pointer;
+}
+
+.navbar__s3 {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+}
+
+.navbar__s3__button2 {
+    padding: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar__s3__button3 {
+    padding: 10px;
+    background-color: white;
+    color: rgb(6, 150, 6);
+    border: solid rgb(6, 150, 6) 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__s3__button1:hover {
+    transition: 0.5s;
+    background-color: #F2F2F2;
+}
+
+.navbar__s3__button2:hover {
+    transition: 0.5s;
+    background-color: #333333;
+}
+
+.navbar__s3__button3:hover {
+    background-color: #F2F2F2;
+}
+
+.textbox {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox__one {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.menubar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menubar__1 {
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.menubar__1 p {
+    position: relative;
+    display: inline-block;
+}
+
+.menubar__1 p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2%;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.menubar__1 p:hover::after {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.Searchbar {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.Searchbar__S1 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 85%;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.Searchbar__S1 input {
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
+.Searchbar__S1 input:focus {
+    outline: none;
+}
+
+.Searchbar__S1 button {
+    background-color: #00c670;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: solid transparent;
+    cursor: pointer;
+}
+
+.Searchbar__S1 button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 184, 0);
+    border: solid #05c672;
+}
+
+.image {
+    margin-top: 40px;
+    margin: 20px;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+}
+
+.sale__image {
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+.sale__image__b1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sale__image__b1_h {
+    border: solid black 1px;
+    width: fit-content;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.sale__image__b2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 60%;
+}
+
+.sale__image__b2 h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.sale__image__b2 h2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.sale__image__button {
+    width: fit-content;
+    border: solid white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mealcontainer {
+    padding: 10px;
+    margin: 22px;
+}
+
+.mealcontainer__box {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.mealcontainer__box div {
+    flex-basis: 20%;
+    flex-grow: 1;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mealcontainer__box img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.mealcontainer h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.mealcontainer p {
+    color: #636363;
+}
+
+.mealcontainer__box h1 {
+    color: rgb(52, 46, 46);
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    background-color: transparent;
+}
+
+.asia-section {
+    padding: 10px;
+    margin: 22px;
+}
+
+.asia-section p {
+    color: #636363;
+}
+
+.asia-section h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.asia-section__container {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.asia-section__container div {
+    flex-basis: 25%;
+    position: relative;
+    cursor: pointer;
+}
+
+.asia-section__container div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.asia-section__container div h1 {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.45);
+}
+
+.footer {
+    padding: 30px;
+    background-color: beige;
+}
+
+.footer__one {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__one__f4 {
+    width: 40%;
+    padding-right: 10%;
+    padding-left: 15%;
+}
+
+.footer__one__f3 {
+    gap: 60px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+
+}
+
+.footer__two,
+.footer__three {
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__two__ic {
+    width: 60px;
+    height: 60px;
+    display: flex;
+}
+
+.footer__two__f2 p {
+    justify-content: space-around;
+    align-items: flex-start;
+    display: inline-block;
+    flex-direction: column;
+
+}
+
+.footer__two__button_1,
+.footer__two__button_2 {
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+
+    align-content: flex-end;
+}
